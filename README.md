@@ -1,10 +1,10 @@
 # JADEGUARD
 
-![JadeGuardLogo]()
+![JadeGuardLogo](https://raw.githubusercontent.com/dogaegeozden/jadeguard/main/app_images/JadeGuard.png)
 
 <br>
 
-JadeGuard is a firewall manager which users' can use to enhance their security.
+JadeGuard is a firewall manager which, users' can use to enhance their cyber security.
 
 <br>
 
@@ -54,11 +54,11 @@ __--help:__ Shows the help message and exits.
 
 <br>
 
-![JadeGuardLogo]()
+![JadeGuardLogo](https://raw.githubusercontent.com/dogaegeozden/jadeguard/main/app_images/JadeGuard.png)
 
 <br>
 
-JadeGuard kullancıların güvenliklerini arttırmalarını sağlayan bir güvenlik duvarı yöneticisidir.
+JadeGuard kullancıların siber güvenliklerini arttırmalarını sağlayan bir güvenlik duvarı yöneticisidir.
 
 <br>
 
