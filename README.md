@@ -34,19 +34,19 @@ __--help:__ Shows the help message and exits.
 
 1) Install the dependencies
 	
-		sudo apt install nano netfilter-persistent iptables-persistent -y
+       sudo apt install nano netfilter-persistent iptables-persistent -y
 
 2) Download the installer
 	
-		curl -L https://github.com/dogaegeozden/ghostsurf/releases/download/firewall/jadeguard.deb -o jadeguard.deb
+       curl -L https://github.com/dogaegeozden/ghostsurf/releases/download/firewall/jadeguard.deb -o jadeguard.deb
 
 3) Start the installer
 
-		sudo dpkg -i jadeguard.deb
+       sudo dpkg -i jadeguard.deb
 
 4) Open a new terminal and type
 
-		sudo jadeguard set
+      sudo jadeguard set
 
 <br>
 
@@ -88,16 +88,16 @@ __--help:__ Yardım mesajını görüntüler.
 
 1) Bağımlılıkları yükle
 	
-		sudo apt install nano netfilter-persistent iptables-persistent -y
+       sudo apt install nano netfilter-persistent iptables-persistent -y
 
 2) Yükleyici indir
 	
-		curl -L https://github.com/dogaegeozden/ghostsurf/releases/download/firewall/jadeguard.deb -o jadeguard.deb
+       curl -L https://github.com/dogaegeozden/ghostsurf/releases/download/firewall/jadeguard.deb -o jadeguard.deb
 
 3) Yükleyiciyi başlat
 
-		sudo dpkg -i jadeguard.deb
+       sudo dpkg -i jadeguard.deb
 
 4) Terminali aç ve uygulamayı başlat
 
-		sudo jadeguard set
+       sudo jadeguard set
