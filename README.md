@@ -38,7 +38,7 @@ __--help:__ Shows the help message and exits.
 
 2) Download the installer
 	
-       curl -L https://github.com/dogaegeozden/ghostsurf/releases/download/firewall/jadeguard.deb -o jadeguard.deb
+       curl -L https://github.com/dogaegeozden/jadeguard/releases/download/firewall/jadeguard.deb -o jadeguard.deb
 
 3) Start the installer
 
@@ -92,7 +92,7 @@ __--help:__ Yardım mesajını görüntüler.
 
 2) Yükleyici indir
 	
-       curl -L https://github.com/dogaegeozden/ghostsurf/releases/download/firewall/jadeguard.deb -o jadeguard.deb
+       curl -L https://github.com/dogaegeozden/jadeguard/releases/download/firewall/jadeguard.deb -o jadeguard.deb
 
 3) Yükleyiciyi başlat
 
