@@ -9,6 +9,9 @@ main(){
     # Calling the accept_all_connection function.
     accept_all_connections
 
+    # Calling the save_the_rules function.
+    save_the_rules
+
 }
 
 delete_all_rules() {
@@ -50,6 +53,16 @@ accept_all_connections() {
     ip6tables -P OUTPUT ACCEPT
 
 }
+
+save_the_rules() {
+    # A function which makes the rules persistent
+
+    iptables-save > /etc/iptables/rules.v4
+
+    ip6tables-save > /etc/iptables/rules.v6
+
+}
+
 
 # Calling the main function.
 main

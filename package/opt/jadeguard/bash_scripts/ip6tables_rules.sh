@@ -15,6 +15,9 @@ main () {
     # Calling the append_iptables_rules function.
     append_iptables_rules
 
+    # Calling the save_the_rules function.
+    save_the_rules
+
     # Calling the display_ip6tables_rules function.
     display_ip6tables_rules
     
@@ -88,7 +91,7 @@ append_iptables_rules() {
     # ip6tables -A OUTPUT -p tcp -m tcp --dport 443 -j ACCEPT
 
     # DNS: Domain Name System -> The purpose of DNS is to translate a domain name into the appropriate IP address.
-    # Note: You should allow incoming and out going communications to this port if you want to use URLs instead of ipaddresses. ExURL: https://dogaege.pythonanywhere.com
+    # Note: You should allow incoming and out going communications to this port if you want to use URLs instead of ipaddresses.
     # ip6tables -A INPUT -p udp --sport 53 -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 
     # ip6tables -A OUTPUT -p udp --dport 53 -m udp -j ACCEPT
@@ -141,6 +144,12 @@ append_iptables_rules() {
 
     # ip6tables -A INPUT -p tcp -m conntrack --ctstate ESTABLISHED --sport 3306 -j ACCEPT
 
+}
+
+save_the_rules() {
+    # A function which makes the rules persistent
+
+    ip6tables-save > /etc/iptables/rules.v6
 }
 
 display_ip6tables_rules() {
