@@ -13,7 +13,7 @@ main () {
     allow_input_and_output_on_loopback_interface
 
     # Calling the append_iptables_rules function.
-    append_iptables_rules
+    # append_ip6tables_rules
 
     # Calling the save_the_rules function.
     save_the_rules
@@ -62,7 +62,7 @@ allow_input_and_output_on_loopback_interface() {
 
 }
 
-append_iptables_rules() {
+append_ip6tables_rules() {
     # A function which appens iptables rules.
 
     echo "Setting ip6tables rules."

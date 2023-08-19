@@ -74,7 +74,17 @@ template = "{:<10}{}"
 def main():
     """The function which runs the entire application"""
 
-    print(f'{jade_color}JADE GUARD{reset_color}\n')
+    banner = """{}
+     _           _       ____                     _ 
+    | | __ _  __| | ___ / ___|_   _  __ _ _ __ __| |
+ _  | |/ _` |/ _` |/ _ \ |  _| | | |/ _` | '__/ _` |
+| |_| | (_| | (_| |  __/ |_| | |_| | (_| | | | (_| |
+ \___/ \__,_|\__,_|\___|\____|\__,_|\__,_|_|  \__,_|{}
+""".format(jade_color, reset_color)
+
+    # print(f'{jade_color}𝓙𝓐𝓓𝓔 𝓖𝓤𝓐𝓡𝓓{reset_color}\n')
+
+    print(banner)
 
     user_check()
 
@@ -121,7 +131,7 @@ def main():
 def show_the_help_page():
     """A function which shows the help page"""
 
-    print(f'{golden_color}Help{reset_color}')
+    print(f'{golden_color}𝓗𝓮𝓵𝓹{reset_color}')
 
     help_text = """
 Usage: your_app.py [command] [options]
@@ -142,7 +152,7 @@ Options:
 def open_edit_mode():
     """A function which opens the regular bash script files in edit mode."""
     
-    print(f'{golden_color}Edit{reset_color}\n')
+    print(f'{golden_color}𝓔𝓭𝓲𝓽{reset_color}\n')
 
     while True:
 
@@ -180,13 +190,13 @@ def open_edit_mode():
 def show_the_rules():
     """A function which shows the iptables rules for both IPv4 and IPv6"""
 
-    print(f'{golden_color}Show{reset_color}')
+    print(f'{golden_color}𝓢𝓱𝓸𝔀{reset_color}')
 
-    print(f'\n{light_blue_color}IPv4 Summry{reset_color}\n')
+    print(f'\n{light_blue_color}𝓘𝓟𝓿4 𝓢𝓾𝓶𝓶𝓪𝓻𝔂{reset_color}\n')
 
     system("iptables -vnL")
 
-    print(f'\n{light_blue_color}IPv6 Summry{reset_color}\n')
+    print(f'\n{light_blue_color}𝓘𝓟𝓿6 𝓢𝓾𝓶𝓶𝓪𝓻𝔂{reset_color}\n')
 
     system("ip6tables -vnL")
 
@@ -194,7 +204,7 @@ def show_the_rules():
 def set_the_rules():
     """A function which sets the firewall rules"""
 
-    print(f'{golden_color}Set{reset_color}\n')
+    print(f'{golden_color}𝓢𝓮𝓽{reset_color}\n')
 
     while True:
 
@@ -254,7 +264,7 @@ def user_check():
 def delete_rules():
     """A function which deletes all the firewall rules"""
     
-    print(f'{golden_color}Delete{reset_color}\n')
+    print(f'{golden_color}𝓓𝓮𝓵𝓮𝓽𝓮{reset_color}\n')
 
     while True:
 
@@ -270,11 +280,11 @@ def delete_rules():
 
                 system(f'bash {delete_rules_file_path}')
 
-                print(f'\n{light_blue_color}IPv4 Summry{reset_color}\n')
+                print(f'\n{light_blue_color}𝓘𝓟𝓿4 𝓢𝓾𝓶𝓶𝓪𝓻𝔂{reset_color}\n')
 
                 system("iptables -vnL")
 
-                print(f'\n{light_blue_color}IPv4 Summry{reset_color}\n')
+                print(f'\n{light_blue_color}𝓘𝓟𝓿6 𝓢𝓾𝓶𝓶𝓪𝓻𝔂{reset_color}\n')
 
                 system("ip6tables -vnL")
 
@@ -304,7 +314,7 @@ def delete_rules():
 def restore_originals():
     """A function which restores bash script files from its' originals"""
 
-    print(f'{golden_color}Restore{reset_color}\n')
+    print(f'{golden_color}𝓡𝓮𝓼𝓽𝓸𝓻𝓮{reset_color}\n')
 
     while True:
 
@@ -348,7 +358,7 @@ def restore_originals():
 def godmode():
     """A function which opens the original bash scripts in edit mode."""
 
-    print(f'{golden_color}God Mode{reset_color}\n')
+    print(f'{golden_color}𝓖𝓸𝓭 𝓜𝓸𝓭𝓮{reset_color}\n')
 
     while True:
 
