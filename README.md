@@ -62,7 +62,7 @@ JadeGuard kullancıların siber güvenliklerini arttırmalarını sağlayan bir 
 
 <br>
 
-## COMMANDS
+## KOMUTLAR
 
 __edit:__ Normal güvenlik duvarı kodlarını dosya editöründe açar.
 
@@ -78,13 +78,13 @@ __godmode:__ Orjinal güvenlik duvarı kodlarını dosya editöründe açar.
 
 <br>
 
-## OPTIONS
+## ARGÜMANLAR
 
 __--help:__ Yardım mesajını görüntüler.
 
 <br>
 
-## INSTALLATION
+## YÜKLEME
 
 1) Bağımlılıkları yükle
 	
