@@ -19,12 +19,19 @@ basicConfig(level=DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 # GLOBAL VARIABLES
 
 command_dict = {
+
     'edit': 'Opens the regular firewall scripst in a file editor.',
+
     'show': 'Displays the firewall rules that have been set.',
+
     'set': 'Sets the firewall rules.',
+
     'delete': 'Delete all the firewall rules.',
+
     'restore': 'Restores the scripts.',
-    'godmode': 'Open the original firewall scripts in a file editor.'
+
+    'godmode': 'Open the original firewall scripts in a file editor.',
+
 }
 
 # List of arguments for displaying the help page
@@ -86,8 +93,6 @@ def main():
 
     print(banner)
 
-    user_check()
-
     if len(argv) == 2:
 
         user_command = argv[1]
@@ -98,13 +103,19 @@ def main():
 
         elif user_command == list(command_dict.keys())[1]:
 
+            user_check()
+
             show_the_rules()
         
         elif user_command == list(command_dict.keys())[2]:
 
+            user_check()
+
             set_the_rules()
 
         elif user_command == list(command_dict.keys())[3]:
+
+            user_check()
 
             delete_rules()
 
@@ -134,7 +145,7 @@ def show_the_help_page():
     print(f'{golden_color}𝓗𝓮𝓵𝓹{reset_color}')
 
     help_text = """
-Usage: your_app.py [command] [options]
+Usage: jadeguard [command/option]
 
 Description:
   A command-line application for setting firewall rules.
